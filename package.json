@@ -4,14 +4,14 @@
   "description": "A Linux-style web app with CIA authentication",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",  // This is how Render will run your app
-    "dev": "nodemon server.js"  // Optional: For local development with auto-reloading
+    "start": "node server.js",  // This starts the app on Render
+    "dev": "nodemon server.js"  // Optional: Useful for local development
   },
   "dependencies": {
     "express": "^4.17.1",
     "body-parser": "^1.19.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"  // Optional: useful for local development
+    "nodemon": "^2.0.4"
   }
 }
