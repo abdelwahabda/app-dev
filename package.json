@@ -1,17 +1,17 @@
 {
-  "name": "dev-app",                   // App name (string)
-  "version": "1.0.0",                        // Version of your app (string)
-  "description": "A Linux-style web app",    // Description of your app (string)
-  "main": "server.js",                       // Main entry file (string)
+  "name": "dev-app",
+  "version": "1.0.0",
+  "description": "A Linux-style web app with CIA authentication",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js",               // Start script for Render
-    "dev": "nodemon server.js"                // Optional: for local development
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
-    "express": "^4.17.1",                    // Express version (string)
-    "body-parser": "^1.19.0"                  // Body parser version (string)
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"                      // Nodemon for development (string)
+    "nodemon": "^2.0.4"
   }
 }
