@@ -1,17 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const port = 3000;
 
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 10000;  // Use the Render-defined port or fallback to 10000
+// Use the environment variable PORT, or fall back to 10000 if it's not set (Render defines PORT for you)
+const port = process.env.PORT || 10000;
 
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
-
-
+// Your existing setup...
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
@@ -27,6 +21,7 @@ app.post('/authenticate', (req, res) => {
     }
 });
 
+// Make sure the app listens on the correct port
 app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
+    console.log(`Server running on port ${port}`);
 });
