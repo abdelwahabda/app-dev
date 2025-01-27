@@ -1,17 +1,17 @@
 {
-  "name": "app-dev",
+  "name": "your-app-name",
   "version": "1.0.0",
   "description": "A Linux-style web app with CIA authentication",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",  // This will start your Node app on Render
-    "dev": "nodemon server.js"  // Optional: useful for local development
+    "start": "node server.js",  // This should run your app in production
+    "dev": "nodemon server.js"  // Optional: useful for local development with auto-reloading
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.1",  // Ensure proper dependency versions
     "body-parser": "^1.19.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4"  // Optional, only needed for local dev
   }
 }
